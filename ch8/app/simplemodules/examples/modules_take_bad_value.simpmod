@@ -1,0 +1,5 @@
+module m 
+    interface []  
+    body [u = 3]
+
+from m take x
