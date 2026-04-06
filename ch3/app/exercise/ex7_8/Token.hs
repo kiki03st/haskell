@@ -9,6 +9,12 @@ data Token =
   | INTEGER_NUMBER                      -- number
   
   | SUB                                 -- - ( expr1, expr2 )
+  | ADD                                 -- + ( expr1, expr2 )
+  | MUL                                 -- * ( expr1, expr2 )
+  | DIV                                 -- / ( expr1, expr2 )
+  | ISEQUAL                             -- == ( expr1, expr2 )
+  | GREATERTHAN                         -- > ( expr1, expr2 )
+  | LESSTHAN                            -- < ( expr1, expr2 )
   | OPEN_PAREN  | CLOSE_PAREN
   | COMMA
 
@@ -32,6 +38,12 @@ tokenStrList =
     (INTEGER_NUMBER, "integer_number"),
     
     (SUB, "-"),
+    (ADD, "+"),
+    (MUL, "*"),
+    (DIV, "/"),
+    (ISEQUAL, "equal?"),
+    (GREATERTHAN, "greater?"),
+    (LESSTHAN, "less?"),
     (OPEN_PAREN, "("),
     (CLOSE_PAREN, ")"),
     (COMMA, ","),

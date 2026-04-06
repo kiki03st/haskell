@@ -20,6 +20,12 @@ lexerSpec = LexerSpec
         ("[0-9]+"  , mkFn INTEGER_NUMBER),
         
         ("\\-"     , mkFn SUB),
+        ("\\+"     , mkFn ADD),
+        ("\\*"     , mkFn MUL),
+        ("\\/"     , mkFn DIV),
+        ("equal\\?"   , mkFn ISEQUAL),
+        ("greater\\?"     , mkFn GREATERTHAN),
+        ("less\\?"     , mkFn LESSTHAN),
         ("\\("     , mkFn OPEN_PAREN),
         ("\\)"     , mkFn CLOSE_PAREN),
         ("\\,"     , mkFn COMMA),
