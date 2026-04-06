@@ -72,5 +72,14 @@ testcases =
     -- check nested let and shadowing
     ("simple_nested_let.let", Just "-1"),
     ("check_shadowing_in_body.let", Just "4"),
-    ("check_shadowing_in_rhs.let", Just "2")
+    ("check_shadowing_in_rhs.let", Just "2"),
+
+    -- let7_8lang specific tests
+    ("simple_arith_1.let7_8", Just "11"),
+    ("simple_arith_2.let7_8", Just "77"),
+    ("simple_arith_3.let7_8", Just "110"),
+    ("simple_arith_4.let7_8", Just "5"),
+    ("simple_arith_5.let7_8", Just "False"),
+    ("simple_arith_6.let7_8", Just "True"),
+    ("simple_arith_7.let7_8", Just "False")
   ]
