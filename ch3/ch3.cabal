@@ -18,6 +18,43 @@ build-type:     Simple
 extra-source-files:
     README.md
     ChangeLog.md
+    app/exercise/ex7_8/examples/check_shadowing_in_body.let
+    app/exercise/ex7_8/examples/check_shadowing_in_rhs.let
+    app/exercise/ex7_8/examples/eval_let_body.let
+    app/exercise/ex7_8/examples/eval_let_rhs.let
+    app/exercise/ex7_8/examples/if_eval_test_false.let
+    app/exercise/ex7_8/examples/if_eval_test_false_2.let
+    app/exercise/ex7_8/examples/if_eval_test_true.let
+    app/exercise/ex7_8/examples/if_eval_test_true_2.let
+    app/exercise/ex7_8/examples/if_false.let
+    app/exercise/ex7_8/examples/if_true.let
+    app/exercise/ex7_8/examples/if_true.let.result
+    app/exercise/ex7_8/examples/negative_const.let
+    app/exercise/ex7_8/examples/nested_arith_left.let
+    app/exercise/ex7_8/examples/nested_arith_right.let
+    app/exercise/ex7_8/examples/no_bool_to_diff_1.let
+    app/exercise/ex7_8/examples/no_bool_to_diff_2.let
+    app/exercise/ex7_8/examples/no_int_to_if.let
+    app/exercise/ex7_8/examples/positive_const.let
+    app/exercise/ex7_8/examples/simple_arith_1.let
+    app/exercise/ex7_8/examples/simple_arith_1.let7_8
+    app/exercise/ex7_8/examples/simple_arith_2.let7_8
+    app/exercise/ex7_8/examples/simple_arith_3.let7_8
+    app/exercise/ex7_8/examples/simple_arith_4.let7_8
+    app/exercise/ex7_8/examples/simple_arith_5.let7_8
+    app/exercise/ex7_8/examples/simple_arith_6.let7_8
+    app/exercise/ex7_8/examples/simple_arith_7.let7_8
+    app/exercise/ex7_8/examples/simple_arith_8.let7_8
+    app/exercise/ex7_8/examples/simple_arith_9.let7_8
+    app/exercise/ex7_8/examples/simple_arith_var_1.let
+    app/exercise/ex7_8/examples/simple_let_1.let
+    app/exercise/ex7_8/examples/simple_nested_let.let
+    app/exercise/ex7_8/examples/test_unbound_var_1.let
+    app/exercise/ex7_8/examples/test_unbound_var_2.let
+    app/exercise/ex7_8/examples/test_var_1.let
+    app/exercise/ex7_8/examples/test_var_2.let
+    app/exercise/ex7_8/examples/test_var_3.let
+    LICENSE
 
 source-repository head
   type: git

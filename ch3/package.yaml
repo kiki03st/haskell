@@ -9,6 +9,9 @@ copyright:           "2022 Author name here"
 extra-source-files:
 - README.md
 - ChangeLog.md
+- app/exercise/ex7_8/examples/*    # examples 디렉토리 내의 모든 파일과 하위 디렉토리 포함
+- README.md        # 필요한 다른 파일들도 함께 나열 가능
+- LICENSE
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package

@@ -18,7 +18,7 @@ value_of (Diff_Exp exp1 exp2) env =
       num2 = expval_num val2
   in  Num_Val (num1 - num2)
 
-value_of (Sum_Exp exp1 exp2) env =
+value_of (Add_Exp exp1 exp2) env =
   let val1 = value_of exp1 env
       val2 = value_of exp2 env
 
@@ -26,7 +26,7 @@ value_of (Sum_Exp exp1 exp2) env =
       num2 = expval_num val2
   in  Num_Val (num1 + num2)
 
-value_of (Prod_Exp exp1 exp2) env =
+value_of (Mul_Exp exp1 exp2) env =
   let val1 = value_of exp1 env
       val2 = value_of exp2 env
 
@@ -42,7 +42,7 @@ value_of (Quot_Exp exp1 exp2) env =
       num2 = expval_num val2
   in  Num_Val (num1 `div` num2)
 
-value_of (Equal_Exp exp1 exp2) env =
+value_of (IsEqual_Exp exp1 exp2) env =
   let val1 = value_of exp1 env
       val2 = value_of exp2 env
 
@@ -50,7 +50,7 @@ value_of (Equal_Exp exp1 exp2) env =
       num2 = expval_num val2
   in  Bool_Val (num1 == num2)
 
-value_of (Greater_Exp exp1 exp2) env =
+value_of (IsGreater_Exp exp1 exp2) env =
   let val1 = value_of exp1 env
       val2 = value_of exp2 env
 
@@ -58,7 +58,7 @@ value_of (Greater_Exp exp1 exp2) env =
       num2 = expval_num val2
   in  Bool_Val (num1 > num2)
 
-value_of (Less_Exp exp1 exp2) env =
+value_of (IsLess_Exp exp1 exp2) env =
   let val1 = value_of exp1 env
       val2 = value_of exp2 env
 

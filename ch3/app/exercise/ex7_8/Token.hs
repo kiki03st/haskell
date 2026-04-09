@@ -11,10 +11,10 @@ data Token =
   | SUB                                 -- - ( expr1, expr2 )
   | ADD                                 -- + ( expr1, expr2 )
   | MUL                                 -- * ( expr1, expr2 )
-  | DIV                                 -- / ( expr1, expr2 )
+  | QUO                                 -- / ( expr1, expr2 )
   | ISEQUAL                             -- == ( expr1, expr2 )
-  | GREATERTHAN                         -- > ( expr1, expr2 )
-  | LESSTHAN                            -- < ( expr1, expr2 )
+  | ISGREATER                         -- > ( expr1, expr2 )
+  | ISLESS                            -- < ( expr1, expr2 )
   | OPEN_PAREN  | CLOSE_PAREN
   | COMMA
 
@@ -40,10 +40,10 @@ tokenStrList =
     (SUB, "-"),
     (ADD, "+"),
     (MUL, "*"),
-    (DIV, "/"),
+    (QUO, "/"),
     (ISEQUAL, "equal?"),
-    (GREATERTHAN, "greater?"),
-    (LESSTHAN, "less?"),
+    (ISGREATER, "greater?"),
+    (ISLESS, "less?"),
     (OPEN_PAREN, "("),
     (CLOSE_PAREN, ")"),
     (COMMA, ","),

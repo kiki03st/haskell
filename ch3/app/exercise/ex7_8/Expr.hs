@@ -5,12 +5,12 @@ type Program = Exp
 data Exp =
     Const_Exp  Int
   | Diff_Exp   Exp Exp
-  | Sum_Exp    Exp Exp
-  | Prod_Exp   Exp Exp
+  | Add_Exp    Exp Exp
+  | Mul_Exp   Exp Exp
   | Quot_Exp   Exp Exp
-  | Equal_Exp  Exp Exp
-  | Greater_Exp Exp Exp
-  | Less_Exp    Exp Exp
+  | IsEqual_Exp  Exp Exp
+  | IsGreater_Exp Exp Exp
+  | IsLess_Exp    Exp Exp
   | IsZero_Exp Exp
   | If_Exp     Exp Exp Exp
   | Var_Exp    Identifier

@@ -30,22 +30,22 @@ parserSpec = ParserSpec
         (\rhs -> return $ Diff_Exp (get rhs 3) (get rhs 5)),
 
       rule "Expression -> + ( Expression , Expression )"
-        (\rhs -> return $ Sum_Exp (get rhs 3) (get rhs 5)),
+        (\rhs -> return $ Add_Exp (get rhs 3) (get rhs 5)),
       
       rule "Expression -> * ( Expression , Expression )"
-        (\rhs -> return $ Prod_Exp (get rhs 3) (get rhs 5)),
+        (\rhs -> return $ Mul_Exp (get rhs 3) (get rhs 5)),
 
       rule "Expression -> / ( Expression , Expression )"
         (\rhs -> return $ Quot_Exp (get rhs 3) (get rhs 5)),
 
       rule "Expression -> equal? ( Expression , Expression )"
-        (\rhs -> return $ Equal_Exp (get rhs 3) (get rhs 5)),
+        (\rhs -> return $ IsEqual_Exp (get rhs 3) (get rhs 5)),
 
       rule "Expression -> greater? ( Expression , Expression )"
-        (\rhs -> return $ Greater_Exp (get rhs 3) (get rhs 5)),
+        (\rhs -> return $ IsGreater_Exp (get rhs 3) (get rhs 5)),
 
       rule "Expression -> less? ( Expression , Expression )"
-        (\rhs -> return $ Less_Exp (get rhs 3) (get rhs 5)),
+        (\rhs -> return $ IsLess_Exp (get rhs 3) (get rhs 5)),
 
       rule "Expression -> zero? ( Expression )"
         (\rhs -> return $ IsZero_Exp (get rhs 3)),
